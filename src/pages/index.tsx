@@ -6,9 +6,6 @@ import styles from '@/styles/Home.module.scss'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const test = true;
-  console.log('teste');
-
   return (
     <>
       <Head>
@@ -46,6 +43,7 @@ export default function Home() {
           <Image
             className={styles.logo}
             src="/next.svg"
+            alt="Next.js Logo"
             width={180}
             height={37}
             priority
