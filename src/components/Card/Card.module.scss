@@ -1,9 +1,8 @@
+@import '../../styles/breakpoints';
+
 .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
 
   span {
     display: inline-block;
@@ -26,11 +25,6 @@
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
   .card:hover span {
     transform: translateX(4px);
   }
@@ -43,7 +37,7 @@
 }
 
 /* Mobile */
-@media (max-width: 700px) {
+@include resposive('onlyMobile') {
   .card {
     padding: 1rem 2.5rem;
 

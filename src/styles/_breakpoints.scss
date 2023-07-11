@@ -1,0 +1,22 @@
+$break-small: 767px;
+$break-large: 1240px;
+
+@mixin resposive($media) {
+  @if $media==onlyMobile {
+    @media only screen and (max-width: $break-small) {
+      @content;
+    }
+  }
+
+  @else if $media==mediumScreens {
+    @media only screen and (min-width: $break-small) and (max-width: $break-large) {
+      @content;
+    }
+  }
+
+  @else if $media==wideScreens {
+    @media only screen and (min-width: $break-large) {
+      @content;
+    }
+  }
+}
