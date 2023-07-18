@@ -1,10 +1,5 @@
+import { CardProps } from "@/types"
 import styles from "./Card.module.scss"
-
-interface CardProps {
-  link: string
-  title: string
-  description: string
-}
 
 export default function Card({ link, title, description }: CardProps) {
   return (
