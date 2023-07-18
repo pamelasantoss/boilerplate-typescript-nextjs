@@ -1,4 +1,4 @@
-@import '../../styles/breakpoints';
+@import "../../styles/breakpoints";
 
 .card {
   padding: 1rem 1.2rem;
@@ -37,7 +37,7 @@
 }
 
 /* Mobile */
-@include resposive('onlyMobile') {
+@include resposive("onlyMobile") {
   .card {
     padding: 1rem 2.5rem;
 

@@ -1,12 +1,12 @@
-import styles from './Card.module.scss';
+import styles from "./Card.module.scss"
 
 interface CardProps {
-  link: string;
-  title: string;
-  description: string;
+  link: string
+  title: string
+  description: string
 }
 
-export default function Card({ link, title, description }:CardProps) {
+export default function Card({ link, title, description }: CardProps) {
   return (
     <a
       href={link}
@@ -17,9 +17,7 @@ export default function Card({ link, title, description }:CardProps) {
       <h2>
         {title} <span>-&gt;</span>
       </h2>
-      <p>
-        {description}
-      </p>
+      <p>{description}</p>
     </a>
   )
-};
+}

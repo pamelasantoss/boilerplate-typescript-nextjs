@@ -6,15 +6,11 @@ $break-large: 1240px;
     @media only screen and (max-width: $break-small) {
       @content;
     }
-  }
-
-  @else if $media==mediumScreens {
+  } @else if $media==mediumScreens {
     @media only screen and (min-width: $break-small) and (max-width: $break-large) {
       @content;
     }
-  }
-
-  @else if $media==wideScreens {
+  } @else if $media==wideScreens {
     @media only screen and (min-width: $break-large) {
       @content;
     }
