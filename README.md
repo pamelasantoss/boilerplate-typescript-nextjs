@@ -19,6 +19,7 @@ Simple boilerplate template with NextJS and TypeScript to be used for webpages d
 - [Testing React Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [ESLint](https://eslint.org/docs/latest/use/getting-started)
 - [Prettier](https://prettier.io/docs/en/)
+- [Husky](https://typicode.github.io/husky/guide.html)
 
 ### :heavy_check_mark: Installation
 
