@@ -1,4 +1,5 @@
 import { CardProps } from "@/types"
+
 import styles from "./Card.module.scss"
 
 export default function Card({ link, title, description }: CardProps) {
